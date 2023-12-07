@@ -1,8 +1,52 @@
+/* :root font-size = 10px, body font-size = 16px */
+/* Finish HTML, then CSS, then responsiveness */
+
 :root {
     font-size: 62.5%;
 }
 
 body {
     font-size: 1.6rem;
+    font-family: Roboto, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
 }
 
+.header {
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #1F2937;
+    box-sizing: border-box;
+    height: 7.5rem;
+    width: 100%;
+    padding: 1rem 5rem;
+    justify-content: space-between;
+    gap: 1rem;
+    
+
+}
+
+.nav_links {
+    /*  */
+}
+
+.nav_links:last-of-type {
+    /* margin-right: 10rem; */
+}
+
+.logo {
+   margin-right: auto;
+}
+
+#logo_text {
+    display: inline;
+}
+
+#glutaLogo {
+    max-height: 100%;
+    max-width: 100%;
+    align-self: flex-start;
+    /* bold, align self, img size */
+}
