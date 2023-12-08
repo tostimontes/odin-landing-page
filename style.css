@@ -163,6 +163,7 @@ section {
     align-items: center;
     text-align: center;
     max-width: min-content;
+
 }
 
 .history_images img {
@@ -173,4 +174,9 @@ section {
     min-width: 5rem;
     border: 0.5rem solid #3882F6;
     border-radius: 1rem;
+    align-self: flex-start;
+}
+
+.history_images p {
+    margin: auto 0;
 }
