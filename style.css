@@ -16,6 +16,7 @@ body {
     height: 100vh;
 }
 
+
 /* HEADER STYLES */
 
 .header {
@@ -70,6 +71,7 @@ body {
     width: auto;
     height: 100%;
     max-width: 100%;
+    min-width: 4rem;
     align-self: flex-start;
     /* bold, align self, img size */
 }
@@ -78,6 +80,7 @@ body {
 
 section {
     max-width: 1000px;
+    /* TODO add TailwindCSS or media query */
 }
 
 .about {
@@ -122,4 +125,32 @@ section {
     height: auto;
     max-width: 100%;
     max-height: 100%;
+    min-width: 24rem;
+    border-radius: 2rem;
+}
+
+/* MAIN CONTENT STYLES */
+
+.main_content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 100%;
+    min-height: calc(7.5rem * 12);
+    /* position: ; */
+    box-sizing: border-box;
+    padding: 7rem 4.5rem;
+}
+
+.history {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4rem;
+}
+
+.history_images {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
 }
