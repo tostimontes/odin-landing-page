@@ -116,10 +116,17 @@ section {
 
 #about_sign_up {
     background-color: #3882F6;
+    color: #F9FAF8;
+    text-decoration: none;
     border-radius: 1rem;
     width: fit-content;
     height: fit-content;
     padding: 0.7rem 1.6rem;
+}
+
+#about_sign_up a:hover, a:visited {
+    color: inherit;
+    text-decoration: inherit;
 }
 
 #main_section_glutas {
