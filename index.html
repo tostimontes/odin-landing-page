@@ -1,40 +1,57 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>Odin landing page</title>
+    <script src="script.js" defer></script>
+    <title>glutaGatos</title>
   </head>
   <body>
-    <nav class="header">
-      <a href="#top" class="logo">
-        <img id="glutaLogo" src="media/glutaLogo.png" alt="logo of two cats" />
-      </a>
-      <div id="logo_text"><a href="#top">glutaGatos</a></div>
-      <a href="#about">ABOUT</a>
-      <a href="#main_content">CONTENT</a>
-      <a href="#sign_up">SIGN UP!</a>
-    </nav>
-    <section class="about" id="about">
-      <div class="about_text">
-        <h1>These cats are glutawesome</h1>
-        <p>
-          Glutamato and Glutamina are the glutaGatos, the most iconic duo you'll
-          find in town.
-        </p>
-        <a id="about_sign_up" href="#sign_up">Sign up!</a>
-      </div>
-      <div class="about_image">
-        <img
-          id="main_section_glutas"
-          src="media/main_section_glutas.jpg"
-          alt="just a casual picture of both"
-        />
+    <div id="header_container">
+      <nav id="header">
+        <a href="#top" id="logo_link">
+          <img
+            id="glutaLogo"
+            src="media/glutaLogo.png"
+            alt="logo of two cats"
+          />
+        </a>
+        <div id="logo_text"><a href="#top">glutaGatos</a></div>
+        <a href="#about">ABOUT</a>
+        <div class="header_dropdown" id="main_content_dropdown">
+          <a href="#main_content">CONTENT</a>
+          <div class="header_dropdown_options">
+            <a href="#history">History</a><a href="#quote">Quote</a>
+          </div>
+        </div>
+        <a href="#sign_up">SIGN UP!</a>
+      </nav>
+    </div>
+    <section id="about">
+      <div id="about_container">
+        <div class="about_text">
+          <h1>These cats are glutawesome</h1>
+          <br />
+          <p>
+            Glutamato and Glutamina are the glutaGatos, the most iconic duo
+            you'll find in town.
+          </p>
+          <br />
+          <a id="about_sign_up" href="#sign_up">Sign up!</a>
+        </div>
+        <!-- ADD Slider here -->
+        <div class="about_image">
+          <img
+            id="main_section_glutas"
+            src="media/main_section_glutas.jpg"
+            alt="just a casual picture of both"
+          />
+        </div>
       </div>
     </section>
-    <section class="main_content" id="main_content">
-      <div class="history">
+    <section id="main_content">
+      <div id="history">
         <h2>A little bit of history</h2>
         <div class="history_images">
           <div class="history_images_pairs">
@@ -58,7 +75,7 @@
           </div>
         </div>
       </div>
-      <div class="quote">
+      <div id="quote">
         <p>
           "I may be a cute little black kitten, but don't be fooled by my
           innocent facade. I have a mischievous side that delights in teasing my
@@ -69,7 +86,7 @@
         <p class="quote_author">- Glutamato</p>
       </div>
     </section>
-    <section class="sign_up" id="sign_up">
+    <section id="sign_up">
       <div class="sign_up_blue_box">
         <div class="sign_up_text">
           <h3>Meow? Meow meow meow!</h3>
@@ -84,3 +101,6 @@
     <footer>Copyright &copy GlutaGatos 2023</footer>
   </body>
 </html>
+
+<!-- Dropdown menus on hover  -->
+<!-- Image slider (in hero) -->
