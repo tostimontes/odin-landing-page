@@ -42,8 +42,8 @@ const scrollCenteredImageIntoView = () => {
 
 // DOM-Dependent Functions
 const centerPreviousImage = () => {
-  removeCenteredClass();
   const centeredImageIndex = findCenteredItem();
+  removeCenteredClass();
   if (centeredImageIndex === 0) {
     sliderImages[5].classList.add('centered');
   } else {
@@ -53,8 +53,8 @@ const centerPreviousImage = () => {
 };
 
 const centerNextImage = () => {
-  removeCenteredClass();
   const centeredImageIndex = findCenteredItem();
+  removeCenteredClass();
   if (centeredImageIndex === 5) {
     sliderImages[0].classList.add('centered');
   } else {
@@ -91,11 +91,11 @@ dropdown.addEventListener('mouseleave', () => {
 });
 
 backButton.addEventListener('click', () => {
-  centerPreviousImage(findCenteredItem());
+  centerPreviousImage();
 });
 
 forwardButton.addEventListener('click', () => {
-  centerNextImage(findCenteredItem());
+  centerNextImage();
 });
 
 sliderDots.forEach((dot) => {
