@@ -57,6 +57,7 @@ body {
   gap: 1rem;
   color: #f9faf8;
   font-size: 1.8rem;
+  z-index: 5;
 }
 
 #header > a {
@@ -245,7 +246,7 @@ a:visited {
 .centered {
   position: relative;
   box-shadow: 1px 1px 1.5rem 0.3rem #1d1f21;
-  z-index: 3;
+  z-index: 2;
   transform: scale(1.1) opacity(1);
   transition:
     opacity 0.7s ease,
